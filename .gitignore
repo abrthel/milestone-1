@@ -1,0 +1,9 @@
+# Visual Studio Code
+.vscode/*
+*.code-workspace
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# Assets - PSD Assets
+assets/*
