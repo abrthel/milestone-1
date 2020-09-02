@@ -1,7 +1,7 @@
 :root {
   --primary-color: #F26B3C;
   --bg-color: #1F2233;
-  --bg-color-alt: #4E5683;
+  --bg-color-alt: #24283D;
   --text-color: #FBF4E0;
 }
 
@@ -10,10 +10,18 @@ body {
   color: var(--text-color);
 }
 
+.subtitle {
+  color: var(--primary-color);
+}
+
 /**
  * Header title block
  */
 
 .titleBlock h1 {
   color: var(--primary-color);
+}
+
+.aboutMe {
+  background-color: var(--bg-color-alt);
 }

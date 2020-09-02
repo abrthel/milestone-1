@@ -30,14 +30,20 @@ h1, h2{
   margin-top: 0;
 }
 
-.subtitle {
-  font-size: var(--text-subheader);
-}
-
 p {
   font-size: var(--text);
 }
 
+section {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+
+.subtitle {
+  font-size: var(--text-subheader);
+  margin-bottom: 0;
+}
 
 /**
  * Header title block
