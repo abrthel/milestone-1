@@ -12,6 +12,9 @@
 
   --button-bg: #393E56;
   --button-hover: var(--primary-color);
+
+  --featured-head: #FFF;
+  --featured-bg: #383E61;
 }
 
 body {
@@ -32,6 +35,10 @@ body {
 }
 
 #aboutMe {
+  background-color: var(--bg-color-alt);
+}
+
+#myWork {
   background-color: var(--bg-color-alt);
 }
 
@@ -62,8 +69,15 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3);
 }
 
-
 .skillButtonGroup > button {
   color: var(--text-color);
   background-color: var(--button-bg);
+}
+
+.featured h3 {
+  color: var(--featured-head);
+}
+
+.featured .background {
+  background-color: var(--featured-bg);
 }
