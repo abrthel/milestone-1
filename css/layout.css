@@ -62,17 +62,60 @@ section > img {
   margin-bottom: 8px;
 }
 
-.aboutMe img {
+#aboutMe img {
  margin-top: 50px;
  margin-bottom: 50px;
 }
 
 .socialMediaIcons {
-  font-size: 20px;
-  list-style-type: none;
-  padding: 0;
-
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skillCards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+
+  margin: 0;
+  padding: 15px;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+.skillCards > li {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 120px;
+  max-width: 180px;
+  /* min-width: 100px; */
+  border-radius: 9px;
+  text-align: center;
+}
+
+.skillCards img {
+  padding: 20px; /* Desktop is 36px */
+}
+
+.skillCards p {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.skillButtonGroup {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skillButtonGroup > button {
+
 }

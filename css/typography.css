@@ -21,6 +21,8 @@
 
   --text: 16px;
 
+  --text-skill-cards: 20px;
+
   font-family: 'Roboto', sans-serif;
 }
 
@@ -59,4 +61,9 @@ section {
 
 .titleBlock p:last-of-type {
   font-size: var(--text-title-post);
+}
+
+
+.skillCards p {
+  font-size: var(--text-skill-cards);
 }

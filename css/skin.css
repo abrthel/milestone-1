@@ -6,6 +6,12 @@
 
   --social-color: #4E5683;
   --social-bg: #1F2233;
+
+  --skills-bg: #404562;
+  --skills-card-bg: #24283D;
+
+  --button-bg: #393E56;
+  --button-hover: var(--primary-color);
 }
 
 body {
@@ -25,7 +31,7 @@ body {
   color: var(--primary-color);
 }
 
-.aboutMe {
+#aboutMe {
   background-color: var(--bg-color-alt);
 }
 
@@ -44,4 +50,20 @@ body {
 
 .socialMediaIcons a:hover .fa-inverse {
   color: var(--primary-color);
+}
+
+.skillCards {
+  background-color: var(--skills-bg);
+  box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+.skillCards > li {
+  background-color: var(--skills-card-bg);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3);
+}
+
+
+.skillButtonGroup > button {
+  color: var(--text-color);
+  background-color: var(--button-bg);
 }
