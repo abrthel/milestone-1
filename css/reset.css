@@ -12,6 +12,14 @@
  */
 
 
+/* I like border-box sizing to be applied to all of my elements. */
+
+ *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
