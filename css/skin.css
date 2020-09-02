@@ -3,6 +3,9 @@
   --bg-color: #1F2233;
   --bg-color-alt: #24283D;
   --text-color: #FBF4E0;
+
+  --social-color: #4E5683;
+  --social-bg: #1F2233;
 }
 
 body {
@@ -24,4 +27,21 @@ body {
 
 .aboutMe {
   background-color: var(--bg-color-alt);
+}
+
+.socialMediaIcons a,
+.socialMediaIcons a:visited {
+  color: var(--social-bg);
+}
+
+.socialMediaIcons .far {
+  color: var(--text-color);
+}
+
+.socialMediaIcons .fa-inverse {
+  color: var(--social-color);
+}
+
+.socialMediaIcons a:hover .fa-inverse {
+  color: var(--primary-color);
 }

@@ -58,3 +58,13 @@ section > img {
  margin-top: 50px;
  margin-bottom: 50px;
 }
+
+.socialMediaIcons {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
