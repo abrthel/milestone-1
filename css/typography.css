@@ -1,0 +1,56 @@
+/**
+ * Desktop Sizing:
+ *
+ * Title: 40
+ * Title-Pre 24
+ * Title-Post 30
+ *
+ * Header 40
+ * subheader 20
+ *
+ * text 20
+*/
+
+:root {
+  --text-title-pre: 24px;
+  --text-title: 40px;
+  --text-title-post: 30px;
+
+  --text-header: 40px;
+  --text-subheader: 20px;
+
+  --text: 16px;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1, h2{
+  font-size: var(--text-header);
+  margin-top: 0;
+}
+
+.subtitle {
+  font-size: var(--text-subheader);
+}
+
+p {
+  font-size: var(--text);
+}
+
+
+/**
+ * Header title block
+ */
+
+.titleBlock p:first-of-type {
+  font-size: var(--text-title-pre);
+}
+
+.titleBlock h1 {
+  font-size: var(--text-title);
+}
+
+.titleBlock p:last-of-type {
+  font-size: var(--text-title-post);
+}
