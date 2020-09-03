@@ -1,0 +1,49 @@
+.mastHead {
+  min-height: 100vh;
+  padding-bottom: 15px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+/**
+ * Header title block
+ */
+
+ .titleBlock {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 2rem;
+}
+
+.titleBlock p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.titleBlock h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/**
+ * Header title block
+ */
+
+ .titleBlock p:first-of-type {
+  font-size: var(--text-title-pre);
+}
+
+.titleBlock h1 {
+  font-size: var(--text-title);
+}
+
+.titleBlock p:last-of-type {
+  font-size: var(--text-title-post);
+}
+
+
+.titleBlock h1 {
+  color: var(--primary-color);
+}

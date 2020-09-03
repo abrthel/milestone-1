@@ -1,8 +1,65 @@
-/*
- * My usecase of images are as blocks. Makes the most
- * sense that I assume they're blocks until needed
- * otherwise.
- */
+
+/**
+ * Desktop Sizing:
+ *
+ * Title: 40
+ * Title-Pre 24
+ * Title-Post 30
+ *
+ * Header 40
+ * subheader 20
+ *
+ * text 20
+*/
+
+:root {
+  /**
+   * Font Size Definitions
+   */
+
+
+  --text-title-pre: 24px;
+  --text-title: 40px;
+  --text-title-post: 30px;
+
+  --text-header: 40px;
+  --text-subheader: 20px;
+
+  --text: 16px;
+
+  --text-skill-cards: 20px;
+
+
+  /**
+   * Color Definitions
+   */
+
+  --primary-color: #F26B3C;
+  --bg-color: #1F2233;
+  --bg-color-alt: #24283D;
+  --text-color: #FBF4E0;
+
+  --social-color: #4E5683;
+  --social-bg: #1F2233;
+
+  --skills-bg: #404562;
+  --skills-card-bg: #24283D;
+
+  --button-bg: #393E56;
+  --button-hover: var(--primary-color);
+
+  --featured-head: #FFF;
+  --featured-bg: #383E61;
+
+  --timeline-bg: #858399;
+  --timeline-entry-bg: #24283D;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 
 img {
   display: block;
@@ -11,7 +68,7 @@ img {
 
 section {
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 130px;
 }
 
 section > p {
@@ -23,48 +80,55 @@ section > img {
   margin-top: 40px;
 }
 
+h1, h2{
+  font-size: var(--text-header);
+  margin-top: 0;
+}
+
+p {
+  font-size: var(--text);
+}
+
+.subtitle {
+  font-size: var(--text-subheader);
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+button {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }
 
-.mastHead {
-  min-height: 100vh;
-  padding-bottom: 15px;
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
+.socialMediaIcons a,
+.socialMediaIcons a:visited {
+  color: var(--social-bg);
 }
 
-/**
- * Header title block
- */
-
-.titleBlock {
-  display: flex;
-  flex-flow: column nowrap;
-  margin-bottom: 2rem;
+.socialMediaIcons .far {
+  color: var(--text-color);
 }
 
-.titleBlock p {
-  margin-top: 0;
-  margin-bottom: 5px;
+.socialMediaIcons .fa-inverse {
+  color: var(--social-color);
 }
 
-.titleBlock h1 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-#aboutMe img {
- margin-top: 50px;
- margin-bottom: 50px;
+.socialMediaIcons a:hover .fa-inverse {
+  color: var(--primary-color);
 }
 
 .socialMediaIcons {
@@ -75,103 +139,4 @@ section > img {
   font-size: 20px;
   list-style-type: none;
   padding: 0;
-}
-
-.skillCards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  gap: 15px;
-
-  margin: 0;
-  padding: 15px;
-  border-radius: 20px;
-  list-style-type: none;
-}
-
-.skillCards > li {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 120px;
-  max-width: 180px;
-  border-radius: 9px;
-  text-align: center;
-}
-
-.skillCards img {
-  padding: 20px; /* Desktop is 36px */
-}
-
-.skillCards p {
-  margin: 0;
-  padding-bottom: 15px;
-}
-
-.skillButtonGroup {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.skillButtonGroup > button {
-
-}
-
-.featured {
-  margin-bottom: 50px;
-}
-
-.featured .description {
-  display: flex;
-  flex-flow: column;
-
-  margin-bottom: 15px;
-}
-
-.featured ul {
-  list-style-type: none;
-  padding-left: 0;
-
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 15px;
-}
-
-.featured .background {
-  padding: 15px;
-  border-radius: 5px;
-}
-
-.featured p {
-
-}
-
-.featured .right {
-  align-items: flex-end;
-}
-
-.featured .right p {
-  text-align: right;
-}
-
-
-.timeline article {
-  padding: 40px 15px;
-  margin: 15px;
-}
-
-.timelineIcon {
-  display: inline-block;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 3px;
-}
-
-.timelineIcon i {
-  padding: 8px;
-  vertical-align: center;
-  text-align: center;
-  font-size: 40px;
 }

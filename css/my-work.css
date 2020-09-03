@@ -1,0 +1,49 @@
+#myWork {
+  background-color: var(--bg-color-alt);
+}
+
+.featured {
+  margin-bottom: 50px;
+}
+
+.featured .description {
+  display: flex;
+  flex-flow: column;
+
+  margin-bottom: 15px;
+}
+
+.featured ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.featured .background {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.featured p {
+
+}
+
+.featured .right {
+  align-items: flex-end;
+}
+
+.featured .right p {
+  text-align: right;
+}
+
+
+.featured h3 {
+  color: var(--featured-head);
+}
+
+.featured .background {
+  background-color: var(--featured-bg);
+}

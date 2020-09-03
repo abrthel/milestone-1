@@ -1,0 +1,38 @@
+
+.timeline article {
+  padding: 40px 15px;
+  margin: 15px;
+}
+
+.timelineIcon {
+  display: inline-block;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.timelineIcon i {
+  padding: 8px;
+  vertical-align: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.timeline article {
+  background-color: var(--timeline-entry-bg);
+}
+
+.timeline:before {
+  background-color: var(--timeline-bg);
+}
+
+
+.timelineIcon {
+  border-color: #70637E;
+  background-color: var(--bg-color);
+}
+
+.timelineIcon i {
+  color: #858399;
+}
