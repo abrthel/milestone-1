@@ -14,9 +14,42 @@
 
 :root {
   /**
-   * Font Size Definitions
+   * Spacers
+   * Assumes a root font size of 16px;
+   *
+   * https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
    */
 
+  --s-0:  0px;
+  --s-1:  0.25rem;  /* 4 px */
+  --s-2:  0.5rem;   /* 8 px */
+  --s-3:  0.75rem;  /* 12 px */
+  --s-4:  1rem;     /* 16 px */
+  --s-5:  1.25rem;  /* 20 px */
+  --s-6:  1.5rem;   /* 24 px */
+  --s-8:  2rem;     /* 32 px */
+  --s-10: 2.5rem;   /* 40 px */
+  --s-12: 3rem;     /* 48 px */
+  --s-16: 4rem;     /* 64 px */
+  --s-20: 5rem;     /* 80 px */
+  --s-24: 6rem;     /* 96 px */
+  --s-32: 8rem;     /* 128 px */
+  --s-40: 10rem;    /* 160 px */
+  --s-48: 12rem;    /* 192 px */
+  --s-56: 14rem;    /* 224 px */
+  --s-64: 16rem;    /* 256 px */
+
+  /**
+   * Font Size Definitions
+   */
+  --text-base:  1rem;     /* 16 px */
+  --text-lg:    1.125rem; /* 18 px */
+  --text-xl:    1.25rem;  /* 20 px */
+  --text-2xl:   1.5rem;   /* 24 px */
+  --text-3xl:   1.875rem; /* 30 px */
+  --text-4xl:   2.25rem;  /* 36 px */
+  --text-5xl:   3rem;     /* 48 px */
+  --text-6xl:   4rem;     /* 64 px */
 
   --text-title-pre: 24px;
   --text-title: 40px;
