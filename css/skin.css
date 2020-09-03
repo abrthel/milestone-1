@@ -15,6 +15,9 @@
 
   --featured-head: #FFF;
   --featured-bg: #383E61;
+
+  --timeline-bg: #858399;
+  --timeline-entry-bg: #24283D;
 }
 
 body {
@@ -80,4 +83,22 @@ body {
 
 .featured .background {
   background-color: var(--featured-bg);
+}
+
+.timeline article {
+  background-color: var(--timeline-entry-bg);
+}
+
+.timeline:before {
+  background-color: var(--timeline-bg);
+}
+
+
+.timelineIcon {
+  border-color: #70637E;
+  background-color: var(--bg-color);
+}
+
+.timelineIcon i {
+  color: #858399;
 }
