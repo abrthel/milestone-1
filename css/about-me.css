@@ -6,3 +6,52 @@
 #aboutMe {
   background-color: var(--bg-color-alt);
 }
+
+#aboutMe .socialMediaIcons {
+  margin-top: var(--s-8);
+}
+
+
+@media screen and (min-width: 480px) {
+  #aboutMe > div {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #aboutMe img {
+    width: 30em;
+    align-self: center;
+  }
+
+  #aboutMe .content{
+    width: 30em;
+    padding: var(--s-4);
+  }
+}
+
+
+
+@media screen and (min-width: 740px) {
+  #aboutMe > div {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  #aboutMe img {
+    width: 50%;
+  }
+
+  #aboutMe .content{
+    width: 50%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (min-width: 950px) {
+  #aboutMe .content{
+    padding: var(--s-12);
+  }
+}
