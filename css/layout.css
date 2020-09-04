@@ -20,7 +20,6 @@
    * https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
    */
 
-  --s-0:  0px;
   --s-1:  0.25rem;  /* 4 px */
   --s-2:  0.5rem;   /* 8 px */
   --s-3:  0.75rem;  /* 12 px */
@@ -50,10 +49,6 @@
   --text-4xl:   2.25rem;  /* 36 px */
   --text-5xl:   3rem;     /* 48 px */
   --text-6xl:   4rem;     /* 64 px */
-
-  --text-title-pre: 24px;
-  --text-title: 40px;
-  --text-title-post: 30px;
 
   --text-header: 40px;
   --text-subheader: 20px;
