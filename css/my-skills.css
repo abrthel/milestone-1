@@ -2,60 +2,98 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: var(--s-2);
 
   margin: 0;
-  padding: 15px;
-  border-radius: 20px;
+  padding: var(--s-3);
+
   list-style-type: none;
+  border-radius: var(--s-5);
+  background-color: var(--skills-bg);
+  box-shadow: inset 0px var(--s-1) var(--s-1) 0px var(--drop-shadow);
 }
 
 .skillCards > li {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 120px;
-  max-width: 180px;
-  border-radius: 9px;
-  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  width: var(--s-24);
+  padding: var(--s-4) 0;
+
+  border-radius: var(--s-2);
+  background-color: var(--skills-card-bg);
+  box-shadow: 0px var(--s-1) var(--s-1) 0px var(--drop-shadow);
 }
 
 .skillCards img {
-  padding: 20px; /* Desktop is 36px */
+  max-width: var(--s-16);
+  margin: var(--s-2);
 }
 
 .skillCards p {
   margin: 0;
-  padding-bottom: 15px;
+  padding: var(--s-4) 0;
+
+  font-size: var(--text-base);
 }
 
 .skillButtonGroup {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: var(--s-3);
+  margin-bottom: var(--s-4);
 }
 
 .skillButtonGroup > button {
+  padding: var(--s-3) var(--s-4);
 
-}
-
-
-.skillCards {
-  background-color: var(--skills-bg);
-  box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
-}
-
-.skillCards > li {
-  background-color: var(--skills-card-bg);
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3);
-}
-
-.skillButtonGroup > button {
+  font-weight: var(--font-medium);
   color: var(--text-color);
   background-color: var(--button-bg);
+  border-radius: var(--s-2);
 }
 
-.skillCards p {
-  font-size: var(--text-skill-cards);
+.skillButtonGroup > button:hover {
+  color: var(--primary-color);
+  box-shadow: 0px var(--s-1) var(--s-1) 0px var(--drop-shadow);
+}
+
+@media screen and (min-width: 480px) {
+  .skillButtonGroup {
+    justify-content: flex-end;
+  }
+
+  .skillCards {
+    gap: var(--s-4);
+  }
+
+  .skillCards > li {
+    width: var(--s-32);
+  }
+
+  .skillCards img {
+    max-width: var(--s-20);
+  }
+
+  .skillCards p {
+    font-size: var(--text-lg);
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .skillCards > li {
+    width: var(--s-40);
+  }
+
+  .skillCards img {
+    max-width: var(--s-24);
+  }
+
+  .skillCards p {
+    font-size: var(--text-xl);
+  }
 }
