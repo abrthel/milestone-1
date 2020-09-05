@@ -1,6 +1,6 @@
 #aboutMe img {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: var(--s-12);
+  margin-bottom: var(--s-12);
  }
 
 #aboutMe {
