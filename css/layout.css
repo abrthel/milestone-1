@@ -41,6 +41,8 @@
   /**
    * Font Size Definitions
    */
+  --text-xs:    0.75rem;  /* 12 px */
+  --text-sm:    0.875rem; /* 14 px */
   --text-base:  1rem;     /* 16 px */
   --text-lg:    1.125rem; /* 18 px */
   --text-xl:    1.25rem;  /* 20 px */
@@ -65,6 +67,16 @@
   --font-medium: 500;
   --font-bold:   700;
   --font-black:  900;
+
+
+  /**
+   * Letter Spacing Definitions
+   */
+
+   --tracking-normal: 0;
+   --tracking-wide:   0.025em;
+   --tracking-wider:  0.05em;
+   --tracking-widest: 0.1em;
 
   /**
    * Color Definitions
@@ -91,6 +103,11 @@
 
   --timeline-bg: #858399;
   --timeline-entry-bg: #24283D;
+
+  --input-bg-color: #1F2233;
+  --input-border-color: #2F344F;
+
+  --contact-text: #FFF;
 }
 
 body {
@@ -178,4 +195,69 @@ button {
   font-size: 20px;
   list-style-type: none;
   padding: 0;
+}
+
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: var(--s-1);
+
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-weight: var(--font-bold);
+  font-size: var(--text-xs);
+  color: var(--text-color)
+}
+
+input,
+textarea {
+  padding: var(--s-3) var(--s-2);
+
+  color: var(--contact-text);
+  background-color: var(--input-bg-color);
+  border: 3px solid var(--input-border-color);
+  border-radius: var(--s-2);
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+input[type="button"],
+input[type="submit"] {
+  display: block;
+  width: initial;
+  padding: var(--s-4) var(--s-3);
+}
+
+
+.inputGroup {
+  margin-bottom: var(--s-5);
+}
+
+.formError {
+  margin-top: 6px;
+
+  color: #663f28;
+  background-color: #ecd9be;
+  /* border-left: 3px solid #dfb980; */
+  border-left: 5px solid #ffc646;
+  border-radius: var(--s-1);
+  /* border-top-right-radius: var(--s-2); */
+  /* border-bottom-right-radius: var(--s-2); */
+
+}
+
+.formError p {
+  margin: 0;
+  padding: var(--s-3);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
 }

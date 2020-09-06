@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="css/my-skills.css">
   <link rel="stylesheet" href="css/my-work.css">
   <link rel="stylesheet" href="css/work-experience.css">
+  <link rel="stylesheet" href="css/contact-me.css">
 </head>
 <body>
   <header id="mastHead">
@@ -401,6 +402,54 @@
             <time datetime="2009-06-28">June 2009</time>
           </p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactMe">
+    <div class="container">
+      <div class="contactFormSection">
+        <header>
+          <p class="subtitle">Get In Touch</p>
+          <h2>Contact Me</h2>
+        </header>
+
+        <form id="contactForm">
+          <div class="inputGroup">
+            <label for="emailInput">Your Email</label>
+            <input type="text" name="emailInput" id="emailInput">
+            <div class="formError hidden">
+              <p>Oops! You must provide your email.</p>
+            </div>
+          </div>
+
+          <div class="inputGroup">
+            <label for="subjectInput">Subject</label>
+            <input type="text" name="subjectInput" id="subjectInput">
+            <div class="formError hidden">
+              <p>Oops! You must provide a subject.</p>
+            </div>
+          </div>
+
+          <div class="inputGroup">
+            <label for="messageInput">Message</label>
+            <textarea name="messageInput" id="messageInput">
+            </textarea>
+            <div class="formError hidden">
+              <p>Oops! You must provide a message.</p>
+            </div>
+            <div class="formError hidden">
+              <p>We are professionals and I expect you to behave like a professional</p>
+            </div>
+          </div>
+
+          <input type="submit" value="Message Me">
+        </form>
+      </div>
+
+      <div class="contactImgSection">
+        <img src="img/duck-typing-illustration.png"
+             alt="Cartoon duck typing on a keyboard. Get it?">
       </div>
     </div>
   </section>

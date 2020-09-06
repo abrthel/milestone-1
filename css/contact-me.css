@@ -1,0 +1,45 @@
+#contactMe {
+  background-color: var(--bg-color-alt);
+}
+
+#contactForm input[type="submit"] {
+  margin-left: auto;
+}
+
+.contactFormSection {
+  margin-bottom: var(--s-12);
+}
+
+
+@media screen and (min-width: 520px) {
+
+  #contactMe .container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactFormSection {
+    width: 75%;
+  }
+}
+
+
+@media screen and (min-width: 760px) {
+
+  #contactMe .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+  }
+
+  .contactFormSection {
+    width: 50%;
+  }
+
+  .contactImgSection {
+    align-self: center;
+    width: 50%;
+  }
+}
