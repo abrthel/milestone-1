@@ -1,10 +1,10 @@
 .skillCards {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: var(--s-2);
 
-  margin: 0;
+  margin: 0 auto;
   padding: var(--s-3);
 
   list-style-type: none;
@@ -12,6 +12,7 @@
   background-color: var(--skills-bg);
   box-shadow: inset 0px var(--s-1) var(--s-1) 0px var(--drop-shadow);
 }
+
 
 .skillCards > li {
   display: flex;
@@ -42,19 +43,20 @@
 
 .skillButtonGroup {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   gap: var(--s-3);
   margin-bottom: var(--s-4);
 }
 
 .skillButtonGroup > button {
-  padding: var(--s-3) var(--s-4);
+  padding: var(--s-2) var(--s-3);
 
   font-weight: var(--font-medium);
-  color: var(--text-color);
   background-color: var(--button-bg);
   border-radius: var(--s-2);
+
+  font-size: var(--text-xs);
 }
 
 .skillButtonGroup > button:hover {
@@ -65,6 +67,11 @@
 @media screen and (min-width: 480px) {
   .skillButtonGroup {
     justify-content: flex-end;
+  }
+
+  .skillButtonGroup > button {
+    font-size: var(--text-normal);
+
   }
 
   .skillCards {

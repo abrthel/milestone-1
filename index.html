@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="css/contact-me.css">
 
   <script src="js/contact.js" defer></script>
+  <script src="js/filter.js" defer></script>
 </head>
 <body>
   <header id="mastHead">
@@ -131,9 +132,10 @@
 
 
       <div class="skillButtonGroup">
-        <button id="filterLangBtn">Languages</button>
-        <button id="filterFrameworkBtn">Frameworks</button>
-        <button id="filterToolsBtn">Tools</button>
+        <button id="allBtn" class="active" data-category="all">All</button>
+        <button id="filterLangBtn" data-category="lang">Languages</button>
+        <button id="filterFrameworkBtn" data-category="framework">Frameworks</button>
+        <button id="filterToolsBtn" data-category="tool">Tools</button>
       </div>
 
       <ul class="skillCards">

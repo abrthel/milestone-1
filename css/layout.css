@@ -170,8 +170,10 @@ button,
   text-align: center;
   border: 1px solid transparent;
   font-weight: var(--font-medium);
+  color: var(--text-color);
 }
 
+button.active,
 button:hover,
 [type="submit"]:hover,
 [type="reset"]:hover,
@@ -241,7 +243,14 @@ input[type="submit"] {
 }
 
 .hidden {
-  display: none;
+  /*
+    !important was used very intentionally here.
+    When applied to elements no matter their state or
+    how they were selected throughout the remaining css
+    they should disappear. We're intentionally breaking
+    the cascade to get desired functionality.
+  */
+  display: none !important;
 }
 
 .socialMediaIcons a,
