@@ -96,7 +96,8 @@
   --skills-card-bg: #24283D;
 
   --button-bg: #393E56;
-  --button-hover: var(--primary-color);
+  --button-active-border: #FFF;
+  --button-active-color: var(--primary-color);
 
   --featured-head: #FFF;
   --featured-bg: #383E61;
@@ -157,46 +158,27 @@ p {
   padding-right: 15px;
 }
 
-button {
+
+button,
+[type="submit"],
+[type="reset"],
+[type="button"] {
+  cursor: pointer;
   display: block;
-  border: none;
   margin: 0;
   padding: .5rem 1rem;
-  cursor: pointer;
   text-align: center;
+  border: 1px solid transparent;
+  font-weight: var(--font-medium);
 }
 
-.hidden {
-  display: none;
+button:hover,
+[type="submit"]:hover,
+[type="reset"]:hover,
+[type="button"]:hover {
+  border-color: var(--button-active-border);
+  color: var(--button-active-color);
 }
-
-.socialMediaIcons a,
-.socialMediaIcons a:visited {
-  color: var(--social-bg);
-}
-
-.socialMediaIcons .far {
-  color: var(--text-color);
-}
-
-.socialMediaIcons .fa-inverse {
-  color: var(--social-color);
-}
-
-.socialMediaIcons a:hover .fa-inverse {
-  color: var(--primary-color);
-}
-
-.socialMediaIcons {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-
-  font-size: 20px;
-  list-style-type: none;
-  padding: 0;
-}
-
 
 label,
 input,
@@ -228,6 +210,7 @@ textarea {
 textarea {
   max-width: 100%;
   min-width: 100%;
+  height: var(--s-32);
 }
 
 input[type="button"],
@@ -236,7 +219,6 @@ input[type="submit"] {
   width: initial;
   padding: var(--s-4) var(--s-3);
 }
-
 
 .inputGroup {
   margin-bottom: var(--s-5);
@@ -247,12 +229,8 @@ input[type="submit"] {
 
   color: #663f28;
   background-color: #ecd9be;
-  /* border-left: 3px solid #dfb980; */
   border-left: 5px solid #ffc646;
   border-radius: var(--s-1);
-  /* border-top-right-radius: var(--s-2); */
-  /* border-bottom-right-radius: var(--s-2); */
-
 }
 
 .formError p {
@@ -260,4 +238,35 @@ input[type="submit"] {
   padding: var(--s-3);
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
+}
+
+.hidden {
+  display: none;
+}
+
+.socialMediaIcons a,
+.socialMediaIcons a:visited {
+  color: var(--social-bg);
+}
+
+.socialMediaIcons .far {
+  color: var(--text-color);
+}
+
+.socialMediaIcons .fa-inverse {
+  color: var(--social-color);
+}
+
+.socialMediaIcons a:hover .fa-inverse {
+  color: var(--primary-color);
+}
+
+.socialMediaIcons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
 }
