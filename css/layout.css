@@ -104,6 +104,10 @@
 
   --timeline-bg: #858399;
   --timeline-entry-bg: #24283D;
+  --timeline-heading-color: #FFF;
+  --timeline-heading-color-alt: var(--primary-color);
+  --timeline-text-color: #CBBED9;
+  --timeline-date-color: #80748C;
 
   --input-bg-color: #1F2233;
   --input-border-color: #2F344F;
