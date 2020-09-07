@@ -1,5 +1,10 @@
 #contactMe {
+  padding-top: 0;
   background-color: var(--bg-color-alt);
+}
+
+#contactMe .container {
+  padding-top: 60px;
 }
 
 #contactForm input[type="submit"] {
@@ -10,6 +15,13 @@
   margin-bottom: var(--s-12);
 }
 
+.knotch {
+  display: block;
+  margin:0 auto;
+  margin-top: -8px;
+  height: 60px;
+  transform: scaleX(2);
+}
 
 @media screen and (min-width: 520px) {
 
@@ -23,6 +35,11 @@
   .contactFormSection {
     width: 75%;
   }
+
+  .knotch {
+    transform: scaleX(4);
+  }
+
 }
 
 
