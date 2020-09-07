@@ -3,6 +3,11 @@
   background-color: var(--bg-color-alt);
 }
 
+#contactMe .socialMediaIcons {
+  justify-content: flex-start;
+  margin: var(--s-8) 0;
+}
+
 #contactMe .container {
   padding-top: 60px;
 }

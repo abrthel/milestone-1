@@ -1,19 +1,63 @@
 #mastHead {
-  min-height: 100vh;
   padding-bottom: var(--s-4);
 
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: flex-start;
+  flex-flow: column;
+  justify-content: space-between;
+  align-self: center;
+}
+
+#mastHead > .container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
 }
 
 #mastHead .large {
   display: none;
 }
 
-#mastHead img {
-  max-width: 715px;
+nav > .container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-4) var(--s-4);
+  margin-bottom: var(--s-16);
+}
+
+nav a {
+  font-size: var(--lg);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+nav img {
+  height: 65px;
+}
+
+nav ul {
+  display: inline-flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  align-items: baseline;
+  gap: 15px;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: max-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.logo {
+  margin-bottom: var(--s-4);
 }
 
 .titleBlock {
@@ -43,14 +87,20 @@
   font-size: var(--text-3xl);
 }
 
+.titleImg {
+  max-width: 715px;
+  margin-left: auto;
+}
 
+@media screen and (min-width: 490px) {
 
-@media screen and (min-width: 440px) {
+  #mastHead > .container {
+    justify-content: flex-start;
+  }
 
-  #mastHead {
-    flex-flow: row wrap;
+  nav > .container {
+    flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-end;
   }
 
   #mastHead .large {
@@ -60,23 +110,43 @@
   #mastHead .mobile {
     display: none;
   }
-}
 
+  .titleImg {
+    margin-left: auto;
+    max-width: 95%;
+  }
+}
 
 
 @media screen and (min-width: 680px) {
 
-  #mastHead {
-    flex-flow: row nowrap;
+  .titleBlock {
+    transform: translate(1em, 5em);
   }
 
-
-  #mastHead img {
-    width: 55%;
+  .titleImg {
+    width: 70%
   }
+}
 
-  /* .titleBlock {
-    width: 45%;
-  } */
+@media screen and (min-width: 765px) {
 
+  .titleBlock {
+    transform: translate(2em, 9em);
+  }
+}
+
+@media screen and (min-width: 859px) {
+
+  .titleBlock {
+    transform: translate(2em, 17em);
+  }
+}
+
+
+@media screen and (min-width: 960px) {
+
+  .titleBlock {
+    transform: translate(2em, 24em);
+  }
 }

@@ -13,6 +13,16 @@
   margin-left: 15px;
 }
 
+.timeline article:first-of-type::before {
+  display: block;
+  content: "\f077";
+
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  transform: translate(-8px, -6px);
+  color: #858399;
+}
+
 .timelineContent {
   max-width: 550px;
   padding: 40px 15px;

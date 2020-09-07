@@ -63,6 +63,7 @@
    * Font Weight Definitions
    */
 
+  --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;
   --font-bold:   700;
@@ -138,6 +139,19 @@ section > p {
 
 section > img {
   margin-top: 40px;
+}
+
+section h2:after {
+  display: block;
+  content: '';
+  width: var(--s-20);
+  height: 2px;
+  margin-top: 4px;
+  background-color: var(--primary-color);
+}
+
+section header {
+  margin-bottom: var(--s-16);
 }
 
 h1, h2{
@@ -257,6 +271,16 @@ input[type="submit"] {
   display: none !important;
 }
 
+.socialMediaIcons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
 .socialMediaIcons a,
 .socialMediaIcons a:visited {
   color: var(--social-bg);
@@ -266,20 +290,44 @@ input[type="submit"] {
   color: var(--text-color);
 }
 
-.socialMediaIcons .fa-inverse {
-  color: var(--social-color);
-}
-
-.socialMediaIcons a:hover .fa-inverse {
+.socialMediaIcons a:hover .fa-stack-1x{
   color: var(--primary-color);
 }
 
-.socialMediaIcons {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+.socialMediaIcons .fa-stack-1x{
+  color: var(--social-color);
+}
 
-  font-size: 20px;
-  list-style-type: none;
-  padding: 0;
+.socialMediaIcons a:hover .fa-stack-2x {
+  color: #1F2233;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFF;
+}
+
+
+#objective {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #44405C;
+  color: #C4B8D1;
+
+}
+
+#objective p {
+  font-weight: var(--font-light);
+  font-size: var(--text-2xl);
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  #objective {
+    margin: 0 auto;
+    max-width: 840px;
+    border-radius: var(--s-2);
+    margin-top: -79px;
+  }
+
+  #objective p {
+    padding: 0 var(--s-12);
+  }
 }
