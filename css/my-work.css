@@ -19,6 +19,7 @@
 .featured img {
   max-width: 618px;
   margin-left: auto;
+  border-radius: var(--s-2);
 }
 
 .featured ul {
