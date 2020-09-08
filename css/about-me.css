@@ -11,7 +11,6 @@
   margin-top: var(--s-8);
 }
 
-
 @media screen and (min-width: 480px) {
   #aboutMe > div {
     display: flex;
@@ -31,8 +30,6 @@
   }
 }
 
-
-
 @media screen and (min-width: 740px) {
   #aboutMe > div {
     display: flex;
@@ -48,7 +45,6 @@
     padding: 0;
   }
 }
-
 
 @media screen and (min-width: 950px) {
   #aboutMe .content{

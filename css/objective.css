@@ -1,0 +1,26 @@
+#objective {
+  padding-top: var(--s-8);
+  padding-bottom: var(--s-8);
+  background-color: var(--objective-bg);
+  color: var(--objective-text);
+
+}
+
+#objective p {
+  font-weight: var(--font-light);
+  font-size: var(--text-2xl);
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  #objective {
+    margin: 0 auto;
+    max-width: 840px;
+    border-radius: var(--s-2);
+    margin-top: -79px;
+  }
+
+  #objective p {
+    padding: 0 var(--s-12);
+  }
+}

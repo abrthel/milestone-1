@@ -9,7 +9,7 @@
 }
 
 #contactMe .container {
-  padding-top: 60px;
+  padding-top: var(--s-16);
 }
 
 #contactForm input[type="submit"] {
@@ -44,9 +44,7 @@
   .knotch {
     transform: scaleX(4);
   }
-
 }
-
 
 @media screen and (min-width: 760px) {
 

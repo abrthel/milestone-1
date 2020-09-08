@@ -22,7 +22,7 @@ nav > .container {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  padding: var(--s-4) var(--s-4);
+  padding: var(--s-4);
   margin-bottom: var(--s-16);
 }
 
@@ -38,7 +38,7 @@ nav li a:hover {
 }
 
 nav img {
-  height: 65px;
+  height: var(--s-16);
 }
 
 nav ul {

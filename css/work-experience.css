@@ -9,8 +9,8 @@
 */
 
 .timeline article {
-  border-left: 2px solid #858399;
-  margin-left: 15px;
+  border-left: 2px solid var(--timeline-bg);
+  margin-left: var(--s-4);
 }
 
 .timeline article:first-of-type::before {
@@ -20,19 +20,19 @@
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   transform: translate(-8px, -6px);
-  color: #858399;
+  color: var(--timeline-bg);
 }
 
 .timelineContent {
   max-width: 550px;
-  padding: 40px 15px;
-  padding-left: 40px;
+  padding: var(--s-10) var(--s-4);
+  padding-left: var(--s-10);
 
   color: var(--timeline-text-color);
   background-color: var(--timeline-entry-bg);
   border-top-right-radius: var(--s-2);
   border-bottom-right-radius: var(--s-2);
-  border-bottom: 6px solid #333855;
+  border-bottom: 6px solid var(--timeline-bottom-trim);
 }
 
 .timeline h3 {
@@ -73,13 +73,13 @@
 }
 
 .timelineIcon .fa-stack-1x.colored {
-  color: #858399;
+  color: var(--timeline-bg);
 }
 
 .timelineIcon .fa-stack-2x.colored {
-  color: #1F2233;
+  color: var(--bg-color);
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #70637E;
+  -webkit-text-stroke-color: var(--timeline-icon-stroke);
 }
 
 @media screen and (min-width: 720px) {
