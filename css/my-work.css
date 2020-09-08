@@ -18,6 +18,8 @@
 
 .featured img {
   max-width: 618px;
+  max-height: 250px;
+  object-fit: cover;
   margin-left: auto;
   border-radius: var(--s-2);
 }
@@ -29,6 +31,10 @@
   display: flex;
   flex-flow: row nowrap;
   gap: var(--s-4);
+
+  font-family: 'Roboto Mono', monospace;
+  font-size: var(--text-sm);
+  color: var(--featured-tech);
 }
 
 .featured h3 {
