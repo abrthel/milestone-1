@@ -16,6 +16,15 @@ function parentsUntil(node, parentTag) {
   return parentNode;
 }
 
+/**
+ * Event Listener for skill filter button clicks
+ *
+ * This function will accept events from multiple buttons,
+ * determine which button raised the event and the filter the
+ * results in the skills panel.
+ *
+ * @param  {Event} event - Event object given from the browser.
+ */
 function filterSkills(event) {
   const buttons = document.querySelectorAll(".skillButtonGroup button");
   const skills = document.querySelectorAll(".skillCards > li");
