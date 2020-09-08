@@ -331,3 +331,15 @@ input[type="submit"] {
     padding: 0 var(--s-12);
   }
 }
+
+footer {
+  padding: var(--s-4) 0;
+}
+
+footer p {
+  text-align-last: center;
+}
+
+footer a {
+  color: var(--primary-color);
+}
