@@ -7,7 +7,7 @@
 */
 
 /* Text meant only for screen readers. */
-.screen-reader-text {
+.screenReaderText {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
